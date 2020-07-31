@@ -11,9 +11,10 @@ body, html {
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url(image2.jpg);
+    background-image: url(image1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    animation: slide 10s infinite;
 }
 
 .content {
@@ -23,6 +24,24 @@ body, html {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     text-align: center;
-    color: rgb(177, 252, 175);
-    letter-spacing: 5px;
+    color: white;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    opacity: 0.5;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url(image1.jpg);
+    }
+    33%{
+        background-image: url(image3.jpg);
+    }
+    67%{
+        background-image: url(image4.jpg);
+    }
 }
